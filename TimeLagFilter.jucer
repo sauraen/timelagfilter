@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="uydphK" name="TimeLagFilter" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.sauraen.TimeLagFilter" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="1" buildAU="0" buildRTAS="0" buildAAX="0"
+              pluginName="TimeLagFilter" pluginDesc="TimeLagFilter" pluginManufacturer="Sauraen"
+              pluginManufacturerCode="SREN" pluginCode="TLAG" pluginChannelConfigs="{2, 2}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="TimeLagFilterAU" pluginRTASCategory=""
+              aaxIdentifier="com.yourcompany.TimeLagFilter" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="3.1.0" companyWebsite="sauraen.com" companyName="Sauraen">
+  <MAINGROUP id="Y7TWx7" name="TimeLagFilter">
+    <GROUP id="{A650A6E1-2E5C-4124-9E4E-50F5A9F7017B}" name="Source">
+      <FILE id="p74CIm" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="AxcYRR" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="LX5JJq" name="ParamGraph.cpp" compile="1" resource="0" file="Source/ParamGraph.cpp"/>
+      <FILE id="BWROzU" name="ParamGraph.h" compile="0" resource="0" file="Source/ParamGraph.h"/>
+      <FILE id="EoOz9n" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="eXtu9f" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="ODpEdU" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="DwJGhO" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="zDSBet" name="ResponseGraph.cpp" compile="1" resource="0"
+            file="Source/ResponseGraph.cpp"/>
+      <FILE id="q6whjv" name="ResponseGraph.h" compile="0" resource="0" file="Source/ResponseGraph.h"/>
+      <FILE id="PRZuqH" name="TimeLagFilterCore.cpp" compile="1" resource="0"
+            file="Source/TimeLagFilterCore.cpp"/>
+      <FILE id="jal5To" name="TimeLagFilterCore.h" compile="0" resource="0"
+            file="Source/TimeLagFilterCore.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013" vstFolder="c:\SDKs\vstsdk2.4"
+            vst3Folder="C:\Users\Public\Steinberg\VST3_SDK">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="TimeLagFilter_debug"
+                       headerPath="C:\Users\Public\Steinberg\VST3_SDK" libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+        <CONFIGURATION name="Release64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="2" targetName="TimeLagFilter" headerPath="C:\Users\Public\Steinberg\VST3_SDK"
+                       libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+        <CONFIGURATION name="Debug32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="TimeLagFilter32_debug"
+                       headerPath="C:\Users\Public\Steinberg\VST3_SDK" libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+        <CONFIGURATION name="Release32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       optimisation="2" targetName="TimeLagFilter32" headerPath="C:\Users\Public\Steinberg\VST3_SDK"
+                       libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/Public/Juce/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+    <LINUX_MAKE targetFolder="Builds/Linux" vstFolder="~/SDKs/vstsdk2.4" vst3Folder="~/SDKs/VST3 SDK">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="TimeLagFilter"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="2"
+                       targetName="TimeLagFilter"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/Public/Juce/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
